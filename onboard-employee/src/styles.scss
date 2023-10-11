@@ -16,6 +16,17 @@
   color: white;
 }
 
+.btn-red{
+  border: 1px solid #900C3F;
+  background-color: white;
+  color: #900C3F;
+}
+
+.btn-red:hover{
+  background-color: #900C3F;
+  color: white;
+}
+
 
 .mat-mdc-snack-bar-container {
   &.aac-red {

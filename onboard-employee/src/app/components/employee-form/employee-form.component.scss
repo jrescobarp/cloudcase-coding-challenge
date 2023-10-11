@@ -1,0 +1,29 @@
+.marginLeft{
+  margin-left: 1em;
+}
+
+.marginTop{
+  margin-top: .5em;
+}
+
+.requDescr{
+  color: red;
+  font-size: .75em;
+}
+
+.redBorder{
+  border: 1px solid red;
+}
+
+
+.requiredInput{
+  position: relative;
+}
+.requiredInput::after{
+  content: '*';
+  position: absolute;
+  top: -.5em;
+  right: .2em;
+  text-align: right;
+  color: #f00
+}

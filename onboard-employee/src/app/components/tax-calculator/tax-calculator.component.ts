@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
@@ -6,15 +6,22 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './tax-calculator.component.html',
   styleUrls: ['./tax-calculator.component.scss']
 })
-export class TaxCalculatorComponent {
+export class TaxCalculatorComponent implements OnInit {
   salary: number = 0;
   retirement_contribution_percentage: number = 10;
   annual_tax: number = 0;
   annual_retirement_contribution: number = 0;
   total: number = 0;
   displayResult = false;
+  isMobile = false;
 
   constructor(private _snackbar: MatSnackBar) { }
+
+  ngOnInit(){
+    if(window.innerWidth <= 1000){
+      this.isMobile = true;
+    };
+  }
 
   calculateSalary(){
     if(this.salary < 1){
