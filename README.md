@@ -2,7 +2,9 @@
  
 This readme will include instructions on how to run the program and also the notes I took while creating the program. 
 
-How to run program:
+
+**How to run program:**
+
 
     Clone or download repository
     
@@ -19,7 +21,7 @@ How to run program:
      Secondaccordion option is the tax/retirement calculator
       Calculate will do all the work
    
-   View Program in mobile mode:
+**View Program in mobile mode:**
 
    
     Right click in browser and choose inspect 
@@ -27,7 +29,7 @@ How to run program:
 
 
 
-Notes during development: 
+**Notes during development:**
 
     1. create onboarding form
         a. employee fields: 
@@ -55,7 +57,7 @@ Notes during development:
             annual tax 
             retirement contribution 
 
-General steps taken to build out the forms:
+**General steps taken to build out the forms:**
 
 
     1. Design general form on Figma (Screenshot attached to this repo)
@@ -70,7 +72,8 @@ General steps taken to build out the forms:
     4. Add input validation
     5. add styling to forms
 
-Test Cases: 
+
+**Test Cases:**
 
 
     Employee form:
