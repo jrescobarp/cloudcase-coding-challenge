@@ -39,6 +39,7 @@ Steps taken to build out the form:
             37001-90000 = .325 per dollar > 37000, +3572
             90001-180000 = .37 per dollar > 90000, +20797
             180001+ = .45 per dollar > 180000, +54097
-    4. add styling to form
+    4. Add input validation
+    5. add styling to forms
 
 
