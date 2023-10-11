@@ -14,6 +14,10 @@ How to run program:
                 cancel will delete all input fields
             Secondaccordion option is the tax/retirement calculator
                 Calculate will do all the work
+    View Program in mobile mode:
+        Right click in browser and choose inspect 
+        move newly opened window to smaller vertical screen sizes to view in mobile mode
+
 
 
 Notes during development: 
