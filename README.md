@@ -3,24 +3,32 @@
 This readme will include instructions on how to run the program and also the notes I took while creating the program. 
 
 How to run program:
+
     Clone or download repository
+    
     within terminal or visual sudio code run the following commands:
         npm i 
         ng serve -o
     program will open in browser window
-        click accordion menus to view forms
-            First accordion option is the user form 
-                submit will print user info as an object to a snackbar object
-                cancel will delete all input fields
-            Secondaccordion option is the tax/retirement calculator
-                Calculate will do all the work
-    View Program in mobile mode:
-        Right click in browser and choose inspect 
-        move newly opened window to smaller vertical screen sizes to view in mobile mode
+    
+    
+    Click accordion menus to view forms
+     First accordion option is the user form 
+      submit will print user info as an object to a snackbar object
+      cancel will delete all input fields
+     Secondaccordion option is the tax/retirement calculator
+      Calculate will do all the work
+   
+   View Program in mobile mode:
+
+   
+    Right click in browser and choose inspect 
+    move newly opened window to smaller vertical screen sizes to view in mobile mode
 
 
 
 Notes during development: 
+
     1. create onboarding form
         a. employee fields: 
             first_name
@@ -48,6 +56,8 @@ Notes during development:
             retirement contribution 
 
 General steps taken to build out the forms:
+
+
     1. Design general form on Figma (Screenshot attached to this repo)
     2. build needed Components: Employee form, salary calculator
     3. add tax calculator logic
@@ -61,6 +71,8 @@ General steps taken to build out the forms:
     5. add styling to forms
 
 Test Cases: 
+
+
     Employee form:
         Check for required fields, do not submit if they are not input
             required fields: first_name, last_name ,email, address
