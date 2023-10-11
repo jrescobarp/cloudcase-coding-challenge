@@ -1,5 +1,21 @@
-<div class="row">
-  <div clas="col-6 text-center"><input type="text" [(ngModel)]="salary" id="first_name" placeholder="Annual Salary"></div>
-  <div clas="col-6 text-center"><input type="text" [(ngModel)]="retirement_contribution_percentage" id="last_name" placeholder="Retirement Contribution"></div>
-  <div clas="col-6"><button class="btn btn-green" (click)="calculateSalary();calculateRetirement();totalCost()">Calculate Annual Tax</button></div>
+<div class="container mt04">
+  <div class="row">
+    <div class="col-4 text-left">
+      <div>Annual Salary: <br> <input type="number" [(ngModel)]="salary" id="first_name" placeholder="Annual Salary" min="1"></div>
+      <div class="mt-4">Retirement Contribution & (minimum 10): <input type="number" [(ngModel)]="retirement_contribution_percentage" id="Retirement Percentage" placeholder="Retirement Contribution" min="10"></div>
+      <div class="mt-4"><button class="btn btn-green" (click)="calculateSalary();calculateRetirement();totalCost()">Calculate Annual Tax</button></div>
+    </div>
+
+    <div *ngIf="displayResult" class="col-4">
+      <div>Annual Salary: <br> ${{salary | number}}</div>
+      <div class="mt-3">Annual Tax: <br> ${{annual_tax | number}}</div>
+      <div class="mt-3">Annual Retirement Contribution: <br> ${{annual_retirement_contribution | number}}</div>
+      <div class="mt-3">Total Annual Cost: <br> ${{total | number}}</div>
+    </div>
+    <div *ngIf="displayResult" class="col-4">
+      <div>Tax Brackets: </div>
+      <img src="/assets/image.png" alt="">
+    </div>
+
+  </div>
 </div>
