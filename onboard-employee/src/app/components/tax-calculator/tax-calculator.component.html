@@ -1,0 +1,5 @@
+<div class="row">
+  <div clas="col-6 text-center"><input type="text" [(ngModel)]="salary" id="first_name" placeholder="Annual Salary"></div>
+  <div clas="col-6 text-center"><input type="text" [(ngModel)]="retirement_contribution_percentage" id="last_name" placeholder="Retirement Contribution"></div>
+  <div clas="col-6"><button class="btn btn-green" (click)="calculateSalary();calculateRetirement();totalCost()">Calculate Annual Tax</button></div>
+</div>
